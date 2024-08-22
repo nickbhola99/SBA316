@@ -5,5 +5,8 @@ Use DOM and BOM properties, methods, and techniques to create a web application 
 ## Features
 * Element Caching 
 * Input Validation
+## Credits
+* codepen.io
+* w3schools
 ## Link
 https://github.com/nickbhola99/SBA316
