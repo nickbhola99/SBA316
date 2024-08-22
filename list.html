@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="list.css" />
+    <title>Shopping List</title>
+  </head>
+  <!-- Shopping List Javascript that utilizes DOM and BOM methods to help users create lists of stuff they intend to buy -->
+  <body>
+    <div class="container">
+      <div>
+        <div class="intro">
+          <h1 id="specialtitle">Shopping List</h1>
+          <div class="border1"></div>
+        </div>
+      </div>
+      <div>
+		<!-- User Input is taken from here to form lists -->
+        <input
+          id="input"
+          type="text"
+          placeholder="Add Item to Shopping List, Click X to Delete"
+          maxlength="30"
+        />
+        <button id="enter">Submit</button>
+      </div>
+	  <div>	
+		<!-- Users can add a little personalization by adding their name to the title using textContent -->
+		<input
+          id="ninput"
+          type="text"
+          placeholder="Add Your Name Too!"
+          maxlength="30"
+        />
+        <button id="nenter">Submit</button>
+	  </div>
+      <div>
+        <ul class="shoppingList"></ul>
+      </div>
+      <div>
+        <div class="stores">
+			<!-- Windows opening to the websites of 3 different stores in case the User would like a recommendation -->
+          <p>Recommended Stores:</p>
+          <div>
+            <button id="BJWindowBtn" type="button">BJs</button>
+            <button id="closeWindowBtn" type="button">Close BJs</button>
+          </div>
+          <div>
+            <button id="InstaWindowBtn" type="button">Open Instacart</button>
+            <button id="closeInstaBtn" type="button">Close Instacart</button>
+          </div>
+          <div>
+            <button id="WalWindowBtn" type="button">Open Walmart</button>
+            <button id="closeWalBtn" type="button">Close Walmart</button>
+          </div>
+		  <div>
+			<button id="logger" type="button">Log All Entries</button>
+		  </div>
+        </div>
+      </div>
+    </div>
+	<!-- Script File -->
+    <script src="list.js"></script>
+  </body>
+</html>
